@@ -2,10 +2,12 @@
 
 # Calculates Grade-adjusted pace (in seconds/mile) for up to 100 recent Strava running activities
 # 
-# Needed: csvkit  https://csvkit.readthedocs.io/en/1.0.2/
+# Needed: csvkit          https://csvkit.readthedocs.io/en/1.0.2/
+#         a Strava API    https://developers.strava.com/
 #
 # -Wesley Chavez, 02-16-2018
          
+
 # Get first and second page of my activities... I only have 98.  I think I'm only allowed 50 activities per call, so I call twice
 curl -X GET https://www.strava.com/api/v3/athlete/activities -d access_token=YOUR_ACCESS_TOKEN -d page=1 -d per_page=50 -s > me_1_50.txt
 curl -X GET https://www.strava.com/api/v3/athlete/activities -d access_token=YOUR_ACCESS_TOKEN -d page=2 -d per_page=50 -s > me_2_50.txt
