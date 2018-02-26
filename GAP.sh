@@ -2,8 +2,8 @@
 
 # Calculates Grade-adjusted pace (in seconds/mile) for up to 100 recent Strava running activities
 # 
-# Needed: csvkit          https://csvkit.readthedocs.io/en/1.0.2/
-#         a Strava API    https://developers.strava.com/
+# Needed: csvkit             https://csvkit.readthedocs.io/en/1.0.2/
+#         a Strava API key   https://developers.strava.com/
 #
 # -Wesley Chavez, 02-16-2018
          
